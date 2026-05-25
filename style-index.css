@@ -1,0 +1,96 @@
+body {
+	background-image: url("/styles/css-images/midnight-minecraft.webp");
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	background-size: cover;
+	background-position: center center;
+}
+
+main {
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr;
+	grid-template-rows: 90%;
+	column-gap: 0px;
+	margin: 35px;
+}
+
+.changelog {
+	display: grid;
+	grid-template-columns: 1fr;
+	margin-left: 0px;
+	margin-right: 0px;
+	margin-top: 200px;
+	margin-bottom: 35px;
+	padding: 0px 0px 0px;
+	background: aliceblue;
+	color: black;
+	line-height: 20px;
+	width: 80%;
+	height: 50%;
+	border: 30px solid transparent;
+	border-image: url("/styles/css-images/changelog.webp");
+	border-image-slice: 50%;
+	border-image-width: 100%;
+	border-image-outset: 7.5 3.25 3.25 3.25;
+	border-image-repeat: stretch;
+	overflow-y: scroll;
+	word-wrap: break-word;
+}
+
+ul {
+	list-style-type: none;
+	margin: 0px;
+	padding: 0px 0px 0px;
+}
+
+h4 {
+	margin-bottom: 5px;
+	padding-bottom: 0;
+	background-color: grey;
+	color: aliceblue;
+}
+
+p {
+	margin-top: 0;
+	padding-top: 0;
+}
+
+.gallery {
+	background-image: url("/styles/css-images/obsidian.webp");
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	height: 90%;
+	width: 165%;
+	gap: 35px;
+	margin-top: 35px;
+	margin-bottom: 35px;
+	margin-left: 35px;
+	margin-right: 35px;
+	padding: 50px 50px;
+}
+
+.gallery-item {
+	display: box;
+	width: 99%;
+	height: auto;
+	position: relative;
+	overflow: hidden;
+	transition: transform 0.3s ease-in-out;
+}
+
+.gallery-item img {
+	width: 100%;
+	height: auto
+}
+
+.top-img {
+	position: absolute;
+	left: 0;
+	top: 0;
+	opacity: 0;
+	transition: all 0.5s ease;
+}
+
+.top-img:hover {
+	opacity: 1;
+}
